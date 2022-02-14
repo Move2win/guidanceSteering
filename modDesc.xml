@@ -13,6 +13,7 @@
         <ru>Guidance Steering</ru>
         <tr>Guidance Steering</tr>
         <jp>GPS自動操舵システム</jp>
+        <cs>GPS自动导航驾驶</cs>
     </title>
 
     <description>
@@ -302,6 +303,40 @@ Changelog 2.1.0.0:
 - Several improvements
 ]]>
         </jp>
+        <cs>
+            <![CDATA[
+GPS自动导航驾驶模组将帮助您在田间精准操纵车辆，使您可以快速、高效地完成各种田间作业。
+
+GPS自动导航驾驶为您提供了多种创建田间工作路径的方法：
+1. 双基点(AB)模式需要您创建基点A和基点B两个基点以确定自动驾驶方向。
+2. 基点+方向角(Heading)模式需要您创建一个基点A，然后手动输入您想要的自动驾驶方向角(北方为0度，东方为90度，以此类推)。
+3. 基点+车头朝向(Direction)模式需要您创建一个基点A，然后GPS会根据当前车头的朝向自动确定驾驶的方向。
+
+您需要在商店中为车辆安装GPS并且在上车后启用GPS才能打开GPS模组的设置菜单。
+
+打开设置菜单步骤：
+- 启用GPS：左Alt + C
+- 打开GPS设置菜单：左Ctrl + S
+
+更多玩法信息可以在Github代码库的<a href="https://github.com/stijnwop/guidanceSteering/blob/develop/README.md">README</a>文件中查看(只提供英文)。
+
+Changelog 2.1.1.0:
+- Fixed issue with not being able to create A+B tracks through the UI.
+
+Changelog 2.1.0.0:
+- Added new snap to direction guidance strategy
+- Added missing object change configuration XML schema
+- Added option to toggle between dotted lines and normal lines
+- Fixed issue with reverse driving target direction
+- Fixed issue with width calculation for combines
+- Fixed possible mod conflict with other mods that overwrite the ConfigurationUtil
+- Fixed loading the GPS module from savegame on mission vehicles
+- Fixed out of bounds offsets leading to guidance zigzag
+- Fixed issue with loading initial first track
+- Added and updated translations
+- Several improvements
+]]>
+        </cs>
     </description>
 
     <l10n filenamePrefix="i18n/locale"/>
